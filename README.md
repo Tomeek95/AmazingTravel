@@ -1,5 +1,5 @@
 # AmazingTravel
-Frontend project
+Frontend project: https://keen-ardinghelli-dca4f8.netlify.com/
 
 Most of the project was created from scratch. 
 For the navbar I added a little Bootstrap. 
