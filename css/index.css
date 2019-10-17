@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding:0;
+    
+    scroll-behavior: smooth;  
+}
+
+/*making scrollbal invisible*/
+::-webkit-scrollbar { 
+  display: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
+    color: #ffff;
+    line-height: 1.8;
+}
+
+/*navbar ------------------------------------------------------------------------------------------------------*/
+.navbar-inverse {
+  background-color: rgba(0,0,0,0.7);
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: rgba(0,0,0,0);
+  padding: 15px;
+}
+
+.amaz-font{
+  font-size: 20px;
+}
+
+.nav-font-size{
+  font-size: 18px;
+}
+
+
+.dropdown-content{
+  background-color: rgba(0,0,0,0.7);
+}
+
+.dropdown-menu>li>a {
+  color: white;
+}
+
+.loginbtn0{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  background-color: green;
+  border:none;
+  margin-right: 0px;
+  padding: 13px; 
+}
+
+/* Home------------------------------------------------------------------------------------------------*/
+.home{
+  background-position: center;
+  background-size: cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.mySlides{
+
+  width:100%;
+}
+
+
+/*Sections----------------------------------------*/
+.pimg2, .pimg3{
+  position:relative;
+  opacity:0.70; /*képek opálossá tétele */
+  background-position:center;
+  background-size:cover; /*így a teljes képet fedi*/
+  background-repeat:no-repeat; /* nincs ismétlés se függőlegesen se vízszintesen*/
+
+  background-attachment:fixed; 
+}
+ 
+.pimg2{
+  background: url('/images/trevi.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('/images/third.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color: lightgrey;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px; /* szavak közötti táv*/
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent; /* így nincs mögöttük "háttér", csupán a kép   */
+}
+
+@media(max-width:568px){ /* így telefonon    */
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+/*footer -----------------------------------------------------------------------------------------*/
+#main-footer{
+  font-size: 15px;
+  text-transform:uppercase;
+	background: rgba(0,0,0,0.4);
+	color:black;
+	text-align: center;
+	padding:20px;
+  margin-top:5px;
+}
+/*LOGIN -----------------------------------------------------------------------------------------------------*/
+/* Full-width input fields */
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.4);;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons*/
+#submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 10px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+button:hover, #submit:hover {
+  opacity: 0.8;
+}
+
+ /*Extra styles for the cancel button*/
+.cancelbtn {
+  width: auto;
+  padding: 9px 30px;
+  background-color: #f44336;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+} 
+
+/* Center the image and position the close button*/
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0 0 0;
+  position: relative;
+} 
+
+ img.avatar {
+  width: 15%;
+  border-radius: 10%;
+} 
+
+span.psw {
+  float: right;
+} 
+
+/* The Modal (background)*/
+.modal-own {
+  justify-content: center;
+  display: hidden; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  color: white;
+  background-color: rgb(0,0,0); /* Fallback color*/ 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+} 
+
+/* Modal Content/Box*/
+.modal-own-content {
+  display: hidden;
+  background-color: rgba(0,0,0,0.7);
+  margin: 12% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+} 
+
+/* The Close Button (x)*/
+.close-own {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color:red;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-own:hover, .close-own:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+ /*Add Zoom Animation to login--------------------------------------------------------------------------------*/
+.animate {
+  -webkit-animation: animatezoom 0;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+} 
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+} 
+
+
+
+
+/* cookie style*/
+#cookiep {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0,0,0,0.7);
+}
+#cookiepa {
+  font-size: 16px;
+  color: white;
+  padding: 7px;
+}
+#cookiea{
+
+  color: skyblue;
+}
+#accept-cookie{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  background-color: green;
+  border:none;
+  padding: 10px;
+
+  position: absolute;
+  left: 82%;
+}
+#accept-cookie:hover{
+  opacity: 0.8;
+}
